@@ -12,6 +12,8 @@ const pageCount = Math.ceil(listItems.length / paginationLimit);
 //Store the value of the currentPage;
 let currentPage;
 
+// ---------------------------functions----------------------------
+
 // Add Page Numbers
 const appendPageNumber = (index) => {
   const pageNumber = document.createElement("button");
@@ -28,6 +30,7 @@ const getPaginationNumbers = () => {
     appendPageNumber(i);
   }
 };
+
 const handleActivePageNumber = () => {
     document.querySelectorAll(".pagination-number").forEach((button) => {
       button.classList.remove("active");
